@@ -20,14 +20,14 @@ public final class MainActivity extends AppCompatActivity {
         Button eventsmap = findViewById(R.id.mapButton);
         //context must be checked
         eventsmap.setOnClickListener(unused -> {
-            startActivity(new Intent(this, DisplayMapActivity.class));
+            startActivity(new Intent(this, DisplayActivity.class));
             //finish or not?
         });
 
         Button reminder = findViewById(R.id.reminderCalendar);
         //context must be checked
         reminder.setOnClickListener(unused -> {
-            startActivity(new Intent(this, ReminderActivity.class));
+            startActivity(new Intent(this, RemindActivity.class));
         });
 
         Button about = findViewById(R.id.aboutUs);
