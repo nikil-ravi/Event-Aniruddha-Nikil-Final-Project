@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public final class MainActivity extends AppCompatActivity {
 
@@ -31,15 +33,13 @@ public final class MainActivity extends AppCompatActivity {
         Button about = findViewById(R.id.aboutUs);
         //context must be checked
         about.setOnClickListener(unused -> {
-            startActivity(new Intent(this, AboutActivity.class));
+            startActivity(new Intent(this, AboutUsActivity.class));
         });
 
         Button contact = findViewById(R.id.contact);
         //context must be checked
         contact.setOnClickListener(unused -> {
-            startActivity(new Intent(this, ContactActivity.class));
+            startActivity(new Intent(this, ContactUsActivity.class));
         });
-
-
     }
 }
