@@ -1,14 +1,10 @@
 package com.example.cs125finalproject;
 
 import android.content.Intent;
+
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
+
 //import android.provider.ContactsContract;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 
@@ -33,7 +29,7 @@ public final class MenuActivity extends AppCompatActivity {
 
     public void enterMap() {
         //Check the context (for now I have made it 'this'
-        Intent intent = new Intent(this, DisplayMapActivity.class);
+        Intent intent = new Intent(this, DisplayActivity.class);
         startActivity(intent);
         //Do we have to finish?
     }

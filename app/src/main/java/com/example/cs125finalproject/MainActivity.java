@@ -24,7 +24,7 @@ public final class MainActivity extends AppCompatActivity {
         Button eventsmap = findViewById(R.id.mapButton);
         //context must be checked
         eventsmap.setOnClickListener(unused -> {
-            startActivity(new Intent(this, DisplayActivity.class));
+            startActivity(new Intent(this, MapsActivity.class));
             //finish or not?
         });
 
